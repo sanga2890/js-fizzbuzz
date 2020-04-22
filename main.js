@@ -7,9 +7,6 @@ for (var i = 1; i < 101; i++) {
     //dichiaro variabile per indicare il numero corrente
     var numero_corrente = i;
 
-    // divido ciacun numero per 15 e ne ricavo il resto
-    var fizzbuzz = numero_corrente % 15;
-
     // divido ciascun numero per 3 e ne ricavo il resto
     var fizz = numero_corrente % 3;
 
@@ -18,7 +15,7 @@ for (var i = 1; i < 101; i++) {
 
     // inserisco prima la condizione della divisione per 15 altrimenti verrebbe sovrascritta dalle successive
     // quindi se il resto della divisione di ciascun numero per 15 risultasse 0 stampo fizzbuzz
-    if (fizzbuzz == 0) {
+    if (fizz == 0 && buzz == 0) {
         console.log(numero_corrente + ' fizzbuzz');
 
     // altrimenti se il resto della divisione di ciascun numero per 5 risultasse 0 stampo buzz
