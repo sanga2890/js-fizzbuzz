@@ -14,7 +14,7 @@ for (var i = 1; i < 101; i++) {
     var buzz = numero_corrente % 5;
 
     // inserisco prima la condizione in cui il numero è sia multiplo di 3 che di 5, altrimenti verrebbe sovrascritta da una delle 2 sucessive
-    // quindi, solo nel caso in cui sia fizz che buzz abbiano resto zero, stampo fizzbuzz 
+    // quindi, solo nel caso in cui sia fizz che buzz abbiano resto zero, stampo fizzbuzz
     if (fizz == 0 && buzz == 0) {
         console.log(numero_corrente + ' fizzbuzz');
 
@@ -28,6 +28,6 @@ for (var i = 1; i < 101; i++) {
 
     // altrimenti, se nussuna della condizioni qui sopra risultasse vera stampo solamente il numero
     } else {
-        console.log(numero_corrente);
+        console.log(numero_corrente, numero_corrente);
     }
 }
